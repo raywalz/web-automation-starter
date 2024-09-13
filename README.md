@@ -30,5 +30,6 @@ See [Setting up Google Cloud Gmail API](./gmail-api.md).
 
 ### TODO:
 
+- save data between sessions (cookies, etc)
 - simulate mouse movements
 - experiment with using stock browsers
