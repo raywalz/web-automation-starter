@@ -1,0 +1,32 @@
+{
+  "name": "web-automation-starter",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "crawlee": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "google-auth-library": "^9.14.1",
+    "googleapis": "^144.0.0",
+    "playwright": "*",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "@apify/tsconfig": "^0.1.0",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.4.0",
+    "typescript": "~5.5.0"
+  },
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:prod": "node dist/main.js",
+    "start:dev": "tsx src/main.ts",
+    "authorize": "tsx src/authorize-gmail.ts",
+    "build": "tsc",
+    "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1",
+    "postinstall": "npx crawlee install-playwright-browsers"
+  },
+  "author": "It's not you it's me",
+  "license": "ISC"
+}
